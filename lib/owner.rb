@@ -28,8 +28,7 @@ class Owner
   
   def cats 
   #  binding.pry
-    owned_cats = Cat.owner.all.match(self)   
-    owned_cats
+    Cat.all.select {|cat| cat.owner == self } 
   end
   
   def dogs 
