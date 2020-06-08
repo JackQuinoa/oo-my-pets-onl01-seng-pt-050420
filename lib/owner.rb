@@ -40,7 +40,7 @@ class Owner
   end
   
   def buy_dog
-    
+    Cat.new(name, self)
   end
   
   def walk_dogs
