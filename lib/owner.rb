@@ -52,7 +52,7 @@ class Owner
   
   def sell_pets 
   binding.pry
-    self.dogs.mood = "nervous" && self.cats.mood = "nervous"
+    
   end
   
   def list_pets
