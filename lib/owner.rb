@@ -47,7 +47,7 @@ class Owner
   end
   
   def feed_cats
-    
+    Cat.all.select {|cat| cat.owner == self ? cat.mood = "happy" : nil}
   end
   
   def sell_pets 
