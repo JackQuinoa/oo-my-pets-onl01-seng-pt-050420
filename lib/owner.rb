@@ -36,7 +36,7 @@ class Owner
   end
   
   def buy_cat 
-    binding.pry 
+  binding.pry 
     Cat.new(name, self)
   end
   
