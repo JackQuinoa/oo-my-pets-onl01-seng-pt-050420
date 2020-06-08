@@ -33,7 +33,7 @@ class Owner
   end
   
   def dogs 
-    owned_dogs = Dogs.match {|dog| dog.owner == self }
+    owned_dogs = Dog.match {|dog| dog.owner == self }
     owned_dogs
   end
   
