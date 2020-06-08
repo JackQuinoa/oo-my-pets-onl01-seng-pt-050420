@@ -32,12 +32,11 @@ class Owner
   end
   
   def dogs 
-    owned_dogs = Dog.match {|dog| dog.owner == self }
-    owned_dogs
+    Cat.all.select {|cat| cat.owner == self } 
   end
   
   def buy_cat 
-    
+    Cat.1.times.owner == self 
   end
   
   def buy_dog
