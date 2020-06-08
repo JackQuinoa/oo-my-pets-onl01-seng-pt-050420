@@ -26,7 +26,7 @@ class Owner
   end
   
   def cats 
-    owned_cats = Cats.owner.match(self)   
+    owned_cats = Cats.match(self)   
     owned_cats
   end
   
