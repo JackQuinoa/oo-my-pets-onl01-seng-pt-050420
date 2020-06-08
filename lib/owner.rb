@@ -26,7 +26,7 @@ class Owner
   end
   
   def cats 
-    Cats.match {|cat| cat.owner == self }   
+    owned_cats = Cats.find {|cat| cat.owner == self }   
   end
   
   def dogs 
