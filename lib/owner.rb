@@ -27,10 +27,12 @@ class Owner
   
   def cats 
     owned_cats = Cats.find {|cat| cat.owner == self }   
+    owned_cats
   end
   
   def dogs 
-    Dogs.match {|dog| dog.owner == self }
+    owned_dogs = Dogs.match {|dog| dog.owner == self }
+    owned_dogs
   end
   
   def buy_cat 
