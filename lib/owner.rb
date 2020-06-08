@@ -34,13 +34,13 @@ class Owner
     Dog.all.select {|dog| dog.owner == self } 
   end
  
-  def buy_cat(name) 
-    Cat.new(name, self.name)
-  end
+  # def buy_cat(name) 
+  #   Cat.new(name, self.name)
+  # end
   
-  def buy_dog(name)
-    Dog.new(name, self.name)
-  end
+  # def buy_dog(name)
+  #   Dog.new(name, self.name)
+  # end
   
   def walk_dogs
     Dog.all.select {|dog| dog.owner == self ? dog.mood = "happy" : nil}
@@ -51,6 +51,7 @@ class Owner
   end
   
   def sell_pets 
+  binding.pry
     self.dogs.mood = "nervous" && self.cats.mood = "nervous"
   end
   
