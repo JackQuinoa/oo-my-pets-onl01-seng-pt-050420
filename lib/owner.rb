@@ -1,3 +1,4 @@
+require "pry"
 class Owner
 
   attr_reader :name , :species 
@@ -26,6 +27,7 @@ class Owner
   end
   
   def cats 
+    binding.pry
     owned_cats = Cats.match(self)   
     owned_cats
   end
