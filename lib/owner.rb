@@ -26,7 +26,7 @@ class Owner
   end
   
   def cats 
-    owned_cats = Cats.find {|cat| cat.owner == self }   
+    owned_cats = Cats.owner {|cat| cat.owner == self }   
     owned_cats
   end
   
