@@ -36,7 +36,7 @@ class Owner
   end
   
   def buy_cat 
-    Cat.1.times.owner == self 
+    Cat.each.owner == self 
   end
   
   def buy_dog
